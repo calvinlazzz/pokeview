@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PokemonCard from './PokemonCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const PokemonList = ({ searchQuery }) => {
+const PokemonList = ({ searchQuery, addToSquad, removeFromSquad, squad }) => {
     const [pokemon, setPokemon] = useState([]);
 
     useEffect(() => {
@@ -40,7 +40,16 @@ const PokemonList = ({ searchQuery }) => {
             <div className="row">
                 {filteredPokemon.map((poke, index) => (
                     <div className="col-md-3 mb-4" key={index}>
-                        <PokemonCard name={poke.name} image={poke.image} types={poke.types} type={poke.types[0]} number={poke.number} />
+                        <PokemonCard 
+                        name={poke.name}
+                         image={poke.image} 
+                         types={poke.types} 
+                         type={poke.types[0]} 
+                         number={poke.number} 
+                         addToSquad={addToSquad}
+                         removeFromSquad={removeFromSquad}
+                         inSquad={squad.some(p => p.number === poke.number)}
+                         />
                     </div>
                 ))}
             </div>

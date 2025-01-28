@@ -53,6 +53,13 @@ body {
 .flip-card-back {
     transform: rotateY(180deg);
 } */
+
+.battle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 #title {
     font-size: 2rem;
     font-weight: bold;
@@ -67,6 +74,11 @@ body {
     border-radius: 0.5rem;
     border-color: black;
 
+}
+
+#squad-button{
+    background: linear-gradient(to bottom, red 50%, white 50%);
+    color: black
 }
 .container {
     margin-top: 20px;

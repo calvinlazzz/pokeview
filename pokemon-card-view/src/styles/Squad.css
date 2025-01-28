@@ -1,0 +1,93 @@
+.squad-pokemon {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.pokemon-sprite {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon-name {
+    font-size: .75rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.remove-button {
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    
+
+}
+
+
+.fire {
+    background-color: #fba54c;
+}
+
+.water {
+    background-color: #4a90e2;
+}
+.ground {
+    background-color: #C4A484;
+}
+.grass {
+    background-color: #7ed957;
+}
+
+.electric {
+    background-color: #ffff33;
+}
+
+.ice {
+    background-color: #a3d8e0;
+}
+
+.fighting {
+    background-color: #d9534f;
+}
+
+.poison {
+    background-color: #8e44ad;
+}
+
+.bug {
+    background-color: #a3c940;
+}
+
+.rock {
+    background-color: #654321;
+}
+
+/* .ghost {
+    background-color: #8e44ad;
+} */
+
+.normal {
+    background-color: #f8f8f8;
+}
+.fairy {
+    background-color: #ffdede;
+}
+.psychic {
+    background-color: #f77b94;
+}
+.dragon {
+    background-color: #f16e57;
+}
