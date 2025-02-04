@@ -6,15 +6,35 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "e2e": "jest tests/e2e"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testMatch": [
+      "**/src/tests/**/*.[jt]s?(x)",
+      "**/tests/e2e/**/*.[jt]s?(x)"
+    ],
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "chromedriver": "^132.0.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.10.8",
     "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "selenium-webdriver": "^4.28.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/jest-dom": "^5.15.1",
+    "jest": "^27.4.5"
   },
   "keywords": [
     "pokemon",
