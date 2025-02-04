@@ -23,7 +23,7 @@ const PokemonCard = ({ name, image, types, type, number, addToSquad, removeFromS
                     <Card.Text>
                         Type: {types.join(', ')}
                     </Card.Text>
-                    <button id= "squad-button" className="btn btn-secondary" onClick={handleButtonClick}>
+                    <button id= "squad-button" className="squad-button btn btn-secondary" onClick={handleButtonClick}>
                         {inSquad ? 'Remove from Squad' : 'Add to Squad'}
                     </button>
                 </Card.Body>
